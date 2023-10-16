@@ -14,17 +14,24 @@ import ContactCard from '../../components/ContactCard/ContactCard';
 export default function Home() {
   const [contacts, setContacts] = useState([
     {
-      name: "Sukhada",
       title: "Ren Trip Gonna be my First Choice Forever",
       description: "It has been an awesome experience for me when I got to roam places like Dipor Bil, Kamakhya Temple, Umanadna temple and many more places. Before I started the journey I wasn't sure I would get chance to visit and these all beautiful places.",
+      name: "Sukhada",
       profession: "Senior Teacher, Bhopal",
       emoji:"⭐⭐⭐⭐⭐",
+    },
+    {
+      title: "Ren Trip Gonna be my First Choice Forever",
+      description: "It has been an awesome experience for me when I got to roam places like Dipor Bil, Kamakhya Temple, Umanadna temple and many more places. Before I started the journey I wasn't sure I would get chance to visit and these all beautiful places.",
+      name: "Renuka Singh",
+      profession: "Senior Teacher, Bhopal",
+      emoji:"⭐⭐⭐",
     }
   ])
 
-  const [name, setName] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
+  const [name, setName] = useState('');
   const [profession, setProfession] = useState('');
   const [emoji, setEmoji] =useState('');
   const [editIndex, setEditIndex] = useState('-1');
@@ -32,16 +39,16 @@ export default function Home() {
 
   const addContact = () => {
 
-    if (!name) {
-      showToast('Name is required...', 'alert', 3000);
-      return;
-    }
     if (!title) {
       showToast('Title is required...', 'alert', 3000);
       return;
     }
-    if (!emoji) {
-      showToast('Emoji is required...', 'alert', 3000);
+    if (!description) {
+      showToast('Description is required...', 'alert', 3000);
+      return;
+    }
+    if (!name) {
+      showToast('Name is required...', 'alert', 3000);
       return;
     }
 
@@ -49,16 +56,17 @@ export default function Home() {
       showToast('Profession is required...', 'alert', 3000);
       return;
     }
-    if (!description) {
-      showToast('Description is required...', 'alert', 3000);
+    if (!emoji) {
+      showToast('Emoji is required...', 'alert', 3000);
       return;
     }
     const obj = {
-      name: name,
       title: title,
-      emoji: emoji,
       description : description,
-      profession: profession
+      name: name,
+      profession: profession,
+      emoji: emoji,
+      
     }
 
     const newContacts = [...contacts, obj]
@@ -106,11 +114,11 @@ export default function Home() {
 
   const enableEditMode = (index) => {
     const contactsData = contacts[index];
-    setName(contactsData.name);
     setTitle(contactsData.title);
-    setEmoji(contactsData.emoji);
     setDescription(contactsData.description);
+    setName(contactsData.name);
     setProfession(contactsData.profession);
+    setEmoji(contactsData.emoji);
     setEditIndex(index);
     setIsEditMode(true);
   }
