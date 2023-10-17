@@ -5,13 +5,13 @@ export default function Navbar(){
     return(<>
        <div>
        <nav class="navbar navbar-expand-lg bg-body-tertiary margin">
-  <div class="container-fluid  nav-color">
+  <div class="container-fluid nav-css  nav-color">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    {/* <a class="navbar-brand" href="#"> */}
 
-       <h1 className="heading-main"> <img src="https://clipartcraft.com/images/car-logo-transparent-background-4.png" height="100px"/> GoStreet </h1>
+       <h1 className="heading-main1"> <img className="img-logo" src="https://clipartcraft.com/images/car-logo-transparent-background-4.png" height="100px"/> GoStreet </h1>
        
-    </a>
+    {/* </a> */}
   </div>
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

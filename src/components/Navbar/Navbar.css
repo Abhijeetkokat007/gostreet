@@ -9,15 +9,30 @@
 .nav-color{
     background-color:#ffc000;
 }
-.heading-main{
-    margin-top: 18px;
+.heading-main1{
+    margin-top: 10px;
 }
 /* .img-card{
     height: 40px;
     width: 10PX; 
 } */
 
-.margin{
+/* .margin{
     margin: -35px 0px;
-    /* height: 50px; */
+    
+} */
+/* .img-logo{
+    border: 1px solid black;
+} */
+
+.nav-css{
+    height: 90px;
+    /* position: fixed; */
+    /* margin-bottom: 100px; */
+    box-shadow: 2px 1px 20px 0.5px rgb(93, 92, 92);
+    z-index: 1;
+    margin: -10px 0;
 }
+/* body{
+    padding-top: 50px;
+} */
