@@ -5,6 +5,7 @@
    import Facebook from '../Footer/Images/facebook1.png';
    import Twitter from '../Footer/Images/twitter.png';
    import Instagram from '../Footer/Images/instagram.png';
+import { Link } from "react-router-dom";
 
 export default function Footer(){
     return(
@@ -16,66 +17,66 @@ export default function Footer(){
           <div className="footer-links">
             <div  className="footer-links_div">
                 <h4>Company</h4>
-                <a href="/about">
+                <Link to="/about">
                   <p >About</p>
-                </a>
-                <a href="/services">
+                </Link>
+                <Link to="/services">
                   <p>Services</p>
-                </a>
-                <a href="/review">
+                </Link>
+                <Link to="/review">
                   <p>Review</p>
-                </a>
-                <a href="/blog">
+                </Link>
+                <Link to="/blog">
                   <p>Blog</p>
-                </a>
-                <a href="/blog">
-                  <p>Blog</p>
-                </a>
-                <a href="/adminlogin">
+                </Link>
+                <Link to="/adminlogin">
                   <p>Adminlogin</p>
-                </a>
+                </Link>
+                <Link to="/userlogin">
+                  <p>Userlogin</p>
+                </Link>
               </div>
 
              <div className="footer-links_div">
                  <h4>Products</h4>
-                 <a href = "/ride"  >
+                 <Link to = "/ride"  >
                       <p>Ride</p>
-                 </a>
-                 <a href = "/drive">
+                 </Link>
+                 <Link to = "/drive">
                       <p>Drive</p>
-                 </a>
-                 <a href = "/deliver">
+                 </Link>
+                 <Link to = "/deliver">
                       <p>Deliver</p>
-                 </a>
-                 <a href = "/uberforbusiness">
+                 </Link>
+                 <Link to = "/uberforbusiness">
                       <p>Uber for Business</p>
-                 </a>
+                 </Link>
              </div>
 
              <div className="footer-links_div">
                 <h4>Global citizenship</h4>
-                <a href = "/safety">
+                <Link to= "/safety">
                    <p>Safety</p>
-                </a>
-                <a href = "/diversityandinclusion">
+                </Link>
+                <Link to = "/diversityandinclusion">
                    <p>Diversity and Inclusion</p>
-                </a>
-                <a href = "/sustainability">
+                </Link>
+                <Link to = "/sustainability">
                    <p>Sustainability</p>
-                </a>
+                </Link>
              </div>
 
              <div className="footer-links_div">
                 <h4>Travel</h4>
-                <a href="./reserve">
+                <Link to="./reserve">
                     <p>reserve</p>
-                </a>
-                <a href="./airports">
+                </Link>
+                <Link to="./airports">
                     <p>Airports</p>
-                </a>
-                <a href="./cities">
+                </Link>
+                <Link to="./cities">
                     <p>Cities</p>
-                </a>
+                </Link>
              </div>
 
              <div className="footer-links_div">
