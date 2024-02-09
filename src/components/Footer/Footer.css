@@ -112,6 +112,7 @@
     font-size: 34px;
     line-height: 42px;
   }
+}
 
 .footer-below{
   flex-direction: column;
@@ -123,7 +124,7 @@
   flex-direction: column;
 }
 
-}
+
 
 @media screen and (max-width:400px) {
   .footer-heading h1{

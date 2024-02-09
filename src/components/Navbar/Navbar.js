@@ -21,25 +21,25 @@ export default function Navbar(){
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-nav" href="/">Home</a>
+          <Link class="nav-link text-nav" to="/">Home</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nav" href="/About">About</a>
+          <Link class="nav-link text-nav" to="/About">About</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nav" href="/Services">Services</a>
+          <Link class="nav-link text-nav"  to="/Services">Services</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nav" href="/Review">Review</a>
+          <Link class="nav-link text-nav"  to="/Review">Review</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nav" href="/Blog">Blog</a>
+          <Link class="nav-link text-nav"  to="/Blog">Blog</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nav" href="/Adminlogin">Adminlogin</a>
+          <Link class="nav-link text-nav"  to="/Adminlogin">Adminlogin</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nav" href="/Userlogin">Userlogin</a>
+          <Link class="nav-link text-nav"  to="/Userlogin">Userlogin</Link>
         </li>
 
       </ul>
