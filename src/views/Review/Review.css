@@ -9,7 +9,7 @@
     margin-top: 30px;
     text-align: center;
 }
-.customer-review h1{
+.customer-review h2{
     margin-bottom: 30px;
 }
 .c-r-1{
@@ -19,16 +19,18 @@
     background-color: rgb(255, 255, 255);
     margin-bottom: 50px;
     border-radius: 10px;
-    height: 270px;
-    width: 700px;
-    padding:5px;
+    height: 300px;
+    width: 900px;
+    padding:15px;
 }
 
 .c-r{
-    background-color: rgb(140, 232, 140);
+    background-color: rgb(254, 245, 214);
     height: 100px;
-    width: 300px;
+    width: 400px;
     margin-top: 70px;
+    margin-right: 50px;
+    margin-left: 50px;
     font-size: 18px;
     color: black;
     border: 1px solid green;
@@ -41,20 +43,18 @@
 .c-r-2 p{
     color: grey;
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
+    
 }
 
-.p1{
-    
-    padding-bottom: 20px;
-    
-}
+/* .p1{
+    padding-top: 50px;
+} */
 
 .p2{
- 
-    padding-bottom:10px ;
-    
+    padding-top: 70px;
 }
+
 .spa{
     color: grey;
     font-size:50px ;
@@ -62,9 +62,10 @@
 }
 
 .spa1{
-    color: forestgreen;
+    color:  #ffc000;
     font-size: 50px;
     padding-left: 20px;
+   
 }
 
 .img-c{
@@ -76,13 +77,13 @@
 
 .img-c img{
     
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 }
 .heading{
     text-align: center;
-    margin-top: 30px;
-    color:rgb(14, 14, 193);
+    margin: 30px;
+    color:rgb(15, 15, 16);
 }
 
 .in-container{
@@ -134,4 +135,58 @@
 
 .review{
     display: inline-block;
+}
+
+.review-container{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.app-body h2{
+    text-align: center;
+    color:  #ffc000;
+    margin-bottom: 30px;
+}
+.add-contacts-container{
+    width: 500px;
+    background-color: white;
+    box-shadow: 0 0 8px 5px rgb(236, 236, 236);
+    border-radius: 10px;
+    margin: auto;
+    padding: 25px;
+    margin-bottom: 50px;
+    
+    
+}
+
+.add-contacts-container input{
+    display: block;
+    width: 400px;
+    height: 40px;
+    border: 2px solid  #ffc000;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.add-contacts-container button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align:center;
+    margin-left: 120px;
+    width: 200px;
+}
+.add-contacts-container button:hover{
+    background-color: #ffc000;
+    color: black;
+    
+}
+
+.hed-1{
+    color: black;
 }
